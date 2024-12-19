@@ -1,0 +1,9 @@
+<h1>You have been logged out</h1>
+<p>
+    {% comment %} <form method="POST" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form> {% endcomment %}
+
+    <a href="{% url 'login' %}">Login here</a>
+</p>
