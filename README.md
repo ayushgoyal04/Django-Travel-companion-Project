@@ -41,3 +41,29 @@ The **Django Travel Companion App** is a web application built using the Django 
    ```bash
    git clone https://github.com/ayushgoyal04/django-travel-companion-app.git
    cd django-travel-companion-app
+
+2. **Clone the repository**
+   It’s a good practice to create a virtual environment for your project. This ensures that dependencies are isolated and won't conflict with other Python projects on your system.
+-  MacOS
+python3 -m venv venv
+source venv/bin/activate  # Activating the virtual environment
+- Windows
+python -m venv venv
+venv\Scripts\activate  # Activating the virtual environment
+
+3. **Install dependencies**
+   After activating the virtual environment, install the required dependencies using pip:
+pip install -r requirements.txt
+
+4. **Apply migrations**
+   Now that the dependencies are installed, apply the database migrations to set up your database:
+python manage.py migrate
+
+5. **Create a superuser (for accessing the Django admin panel)**
+Create a superuser to access the Django admin interface, where you can manage trips and notes:
+python manage.py createsuperuser
+
+6. **Run the development server**
+   You are now ready to run the application! Start the Django development server:
+python manage.py runserver
+
